@@ -5,9 +5,10 @@ Welcome to Tornado Trajectory Project's Documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   usage.rst
-   Project_Workflow
    overview
+   usage
+   challenges
+   Project_Workflow
 
    
 
