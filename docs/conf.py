@@ -3,7 +3,7 @@ import sys
 sys.path.insert(0, os.path.abspath('..'))
 
 # -- Project information -----------------------------------------------------
-project = 'Tornado Trajectory Project'
+project = 'Bacterial-Flagellar-Motors-detection'
 copyright = '2025'
 author = 'yassine'
 
