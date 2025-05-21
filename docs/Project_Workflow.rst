@@ -1,26 +1,22 @@
-Project Workflow
-====================
-Data Preprocessing:
+Workflow Overview
+=================
 
-Normalize tomogram slices.
+The goal is to localize bacterial flagellar motors across cryo-tomograms using AI.
 
-Align slices to correct for drift.
+Steps:
+------
 
-Segmentation with U-Net:
+1. **Preprocessing**
+   - Normalize and align tomogram slices.
 
-Segment bacterial bodies in each 2D slice.
+2. **Annotation**
+   - Label motors manually or semi-automatically.
 
-Membrane Detection with YOLO:
+3. **Modeling**
+   - Segment bacterial body using **U-Net** (per slice).
+   - Detect membranes using **YOLO** (per slice).
+   - Fuse outputs to estimate motor locations.
 
-Detect membrane regions in each 2D slice.
-
-Motor Localization:
-
-Combine segmentation and detection outputs to estimate motor positions.
-
-3D Position Averaging:
-
-Track detected positions across adjacent slices.
-
-Compute mean coordinates to consolidate detections and avoid duplicates.
-
+4. **Postprocessing**
+   - Track detected motors across slices.
+   - Compute **mean position** to avoid duplicates in 3D space.
