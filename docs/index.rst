@@ -5,12 +5,8 @@ Welcome to Tornado Trajectory Project's Documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   introduction
-   data
-   normalization_strategie
-   prediction_strategie
-   modeling
-   usage
+   Project_Workflow
+   overview
 
    
 
